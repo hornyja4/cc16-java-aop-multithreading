@@ -1,6 +1,6 @@
 package cz.codecamp.aop;
 
-import cz.codecamp.aop.service.HelloWorldService;
+import cz.codecamp.aop.service.TimeTrackedService;
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,15 +13,16 @@ public class AopApplication {
         application.setBannerMode(Banner.Mode.OFF);
         ConfigurableApplicationContext context = application.run(args);
 
-        context.getBean(HelloWorldService.class).sayHelloWorld();
+        context.getBean(TimeTrackedService.class).iWantToBeTimeTracked(1000, 10);
 
+        /*
         try {
             context.getBean(HelloWorldService.class).sayHelloWorldAndThrow();
         } catch (Throwable t) {
             // do nothing
-        }
+        } */
 
-        context.getBean(HelloWorldService.class).auditableHello(1, 5.0f, "this is a string");
+        //context.getBean(HelloWorldService.class).auditableHello(1, 5.0f, "this is a string");
 
         context.close();
     }

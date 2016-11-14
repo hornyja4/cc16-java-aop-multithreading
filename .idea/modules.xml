@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aop-multithreading.iml" filepath="$PROJECT_DIR$/.idea/modules/aop-multithreading.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aop-multithreading_main.iml" filepath="$PROJECT_DIR$/.idea/modules/aop-multithreading_main.iml" group="aop-multithreading" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aop-multithreading_test.iml" filepath="$PROJECT_DIR$/.idea/modules/aop-multithreading_test.iml" group="aop-multithreading" />
+    </modules>
+  </component>
+</project>
